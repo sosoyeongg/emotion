@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매개변수,파라미터,이자값</title>
+</head>
+<body>
+    <script>
+        // 매개변수 - 함수 내부에 저장할 수 있는 이름 없는 변수 
+        // 함수정의 as
+        // as 함수에는 3개의 매개변수를 받음 a,b,c
+        // 이 매개변수들은, 함수가 호출될때마다 전달되는 값을 담기 위한 자리임
+        function as(a, b, c){
+            return a + b + c; 
+            // 함수가 받은 매개변수 a + b + c 를 더한 값을 반환해 
+            // 매개변수는, 함수의 입력값을 받아서 그 함수의 동작을 제어함
+        }
+        // 그래서 해당 함수 호출시, 
+        // 함수 as를 호출하면서 3개의 값을 전달 
+        // 결과 호출시, 100 + 100 + 100 더하여져서 300이 나옴 
+        // 이를 콘솔에 출력
+        // 매개변수 사용시 이로운 점 - 재사용성이 높아져서 
+        // 매개변수를 통해 함수가 다양한 입력값을 갖으면 
+        // 그에 대한 작업을 수항할 수 있게 함 
+        var sum = as(100, 100, 100); 
+        // 결과 : 300 
+        console.log(sum);
+    </script>
+</body>
+</html>
